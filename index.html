@@ -1,6 +1,12 @@
 <html>
 <head>
 <style>
+  code
+{
+    font-family: monospace;
+    color: chocolate;
+
+}
 div {
   background-color: lightgrey;
   width: 300px;
@@ -26,9 +32,14 @@ div {
   The padding clears the area around the content.
   The margin clears the area outside the border. 
 </p>
-
-</body>
-</html>
+<code>
+  <pre>
+    width: 300px;
+  padding: 15px;
+  border: 15px solid green;
+  margin: 20px;
+  </pre>
+</code>
 
 <html>
 <body>
@@ -52,6 +63,7 @@ div {
 <html>
 <head>
 <style> 
+
 div {
   width: 100px;
   height: 100px;
@@ -71,6 +83,23 @@ div {
 <div></div>
 
 <p><b></b> When the animation is finished, it will change back to its orgiinal format</p>
+
+<code>
+  <pre>
+    {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      animation-name: example;
+      animation-duration: 4s;
+    }
+    
+    @keyframes example {
+      from {background-color: red;}
+      to {background-color: yellow;}
+    }
+  </pre>
+</code>
 
 </body>
 </html>
@@ -136,7 +165,7 @@ footer {
   color: white;
 }
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+
 @media (max-width: 600px) {
   nav, article {
     width: 100%;
@@ -173,6 +202,55 @@ footer {
 <footer>
   <p>Footer</p>
 </footer>
+
+<code>
+  <pre>
+body 
+  font-family: Arial, Helvetica, sans-serif;
+
+header 
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+
+nav 
+  float: left;
+  width: 30%;
+  height: 300px; 
+  background: #ccc;
+  padding: 20px;
+
+nav ul 
+  list-style-type: none;
+  padding: 0;
+
+article 
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; 
+
+section::after 
+  content: "";
+  display: table;
+  clear: both;
+
+footer 
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+
+@media (max-width: 600px) 
+  nav, article {
+    width: 100%;
+    height: auto;
+  
+  </pre>
+</code>
 
 </body>
 </html>
